@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="202.0" prefWidth="362.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.company.controller.PassengerBudgetController">
+   <children>
+      <Label layoutX="46.0" layoutY="6.0" text="Increase Budget" underline="true">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <Button fx:id="submitBtn" layoutX="286.0" layoutY="157.0" mnemonicParsing="false" text="Submit" />
+      <Button fx:id="backBtn" layoutX="14.0" layoutY="157.0" mnemonicParsing="false" text="Back" />
+      <Label layoutX="14.0" layoutY="72.0" text="Enter the amount of money :">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="budgetField" layoutX="86.0" layoutY="123.0" />
+   </children>
+</AnchorPane>

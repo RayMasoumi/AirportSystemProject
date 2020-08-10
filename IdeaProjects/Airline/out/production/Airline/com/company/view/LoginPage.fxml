@@ -7,17 +7,16 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-
 <AnchorPane prefHeight="401.0" prefWidth="457.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.company.controller.LoginPageController">
    <children>
-      <AnchorPane layoutY="1.0" prefHeight="400.0" prefWidth="434.0">
+      <AnchorPane layoutX="4.0" layoutY="1.0" prefHeight="400.0" prefWidth="453.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Group layoutX="18.0" layoutY="2.0">
+            <Group layoutX="4.0" layoutY="-6.0" AnchorPane.bottomAnchor="55.0" AnchorPane.leftAnchor="33.0" AnchorPane.rightAnchor="33.798828125" AnchorPane.topAnchor="0.0">
                <children>
                   <TextField fx:id="usernameField" layoutX="179.0" layoutY="94.0" promptText="Enter your username" />
                   <Button fx:id="forgotPasswordBtn" layoutX="285.0" layoutY="283.0" mnemonicParsing="false" text="security question" />
                   <PasswordField fx:id="passwordField" layoutX="179.0" layoutY="156.0" promptText="Enter your password" />
-                  <Label fx:id="blankPasswordLbl" layoutX="196.0" layoutY="181.0" text="*field must be filled !" textFill="#f2eded" />
+                  <Label fx:id="blankPasswordLbl" layoutX="196.0" layoutY="189.0" text="*field must be filled !" textFill="WHITE" />
                   <Button fx:id="registerBtn" layoutX="314.0" layoutY="325.0" mnemonicParsing="false" text="Register" />
                   <Label layoutX="77.0" layoutY="328.0" text="Don't have an account ?">
                      <font>
@@ -29,14 +28,14 @@
                         <Font size="17.0" />
                      </font>
                   </Label>
-                  <Label layoutX="21.0" layoutY="94.0" text="Username :">
+                  <Label layoutX="49.0" layoutY="96.0" text="Username :">
                      <font>
-                        <Font size="19.0" />
+                        <Font name="Lucida Sans Typewriter Regular" size="19.0" />
                      </font>
                   </Label>
-                  <Label layoutX="80.0" layoutY="286.0" text="Forgot your password ?">
+                  <Label layoutX="69.0" layoutY="286.0" text="Forgot your password ?">
                      <font>
-                        <Font size="15.0" />
+                        <Font name="Lucida Sans Typewriter Regular" size="15.0" />
                      </font>
                   </Label>
                   <Label layoutX="106.0" layoutY="6.0" text="LOGIN PAGE" underline="true">
@@ -44,15 +43,17 @@
                         <Font size="34.0" />
                      </font>
                   </Label>
-                  <Label fx:id="blankUsernameLbl" layoutX="196.0" layoutY="119.0" text="*field must be filled !" textFill="#f5eded" />
-                  <Label layoutX="25.0" layoutY="156.0" text="password :">
+                  <Label fx:id="blankUsernameLbl" layoutX="196.0" layoutY="125.0" text="*field must be filled !" textFill="WHITE" />
+                  <Label fx:id="passLbl" layoutX="49.0" layoutY="157.0" text="Password :">
                      <font>
-                        <Font size="19.0" />
+                        <Font name="Lucida Sans Typewriter Regular" size="19.0" />
                      </font>
                   </Label>
-                  <Button fx:id="loginBtn" layoutX="350.0" layoutY="196.0" mnemonicParsing="false" text="Log in" />
+                  <Button fx:id="loginBtn" layoutX="300.0" layoutY="198.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="101.0" text="Log in" />
+                  <Button fx:id="superBtn" layoutX="190.0" layoutY="198.0" mnemonicParsing="false" text="Super Admin" />
                </children>
             </Group>
+            <Button fx:id="exitBtn" layoutX="196.0" layoutY="374.0" mnemonicParsing="false" text="Exit" />
          </children>
       </AnchorPane>
    </children>

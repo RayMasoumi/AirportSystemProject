@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="451.0" prefWidth="377.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.company.controller.RegisterPageController">
+   <children>
+      <Group fx:id="passCheckLbl">
+         <children>
+            <Group>
+               <children>
+                  <TextField fx:id="lastNameField" layoutX="42.0" layoutY="121.0" prefHeight="25.0" prefWidth="194.0" promptText="Lastname :" />
+                  <Label layoutX="14.0" layoutY="63.0" text="Enter the asked information to register :">
+                     <font>
+                        <Font name="Lucida Sans Typewriter Regular" size="13.0" />
+                     </font>
+                  </Label>
+                  <PasswordField fx:id="passwordField" layoutX="42.0" layoutY="274.0" prefHeight="25.0" prefWidth="194.0" promptText="Password :" />
+                  <TextField fx:id="nameField" layoutX="42.0" layoutY="85.0" prefHeight="25.0" prefWidth="194.0" promptText="Name :" />
+                  <Button fx:id="registerBtn" layoutX="301.0" layoutY="336.0" mnemonicParsing="false" text="Confirm" />
+                  <TextField fx:id="emailField" layoutX="42.0" layoutY="351.0" prefHeight="25.0" prefWidth="194.0" promptText="E-mail :" />
+                  <TextField fx:id="usernameField" layoutX="42.0" layoutY="232.0" prefHeight="25.0" prefWidth="194.0" promptText="Username :" />
+                  <TextField fx:id="budgetField" layoutX="42.0" layoutY="412.0" prefHeight="25.0" prefWidth="194.0" promptText="Budget :" />
+                  <Button fx:id="exitBtn" layoutX="304.0" layoutY="412.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="63.0" text="Exit" />
+                  <Label layoutX="301.0" layoutY="257.0" />
+                  <Label layoutX="21.0" layoutY="387.0" text="amount of money ?" />
+                  <Button fx:id="backBtn" layoutX="304.0" layoutY="375.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="63.0" text="Back" />
+                  <TextField fx:id="idField" layoutX="42.0" layoutY="158.0" prefHeight="25.0" prefWidth="194.0" promptText="Identification :" />
+                  <Label layoutX="53.0" layoutY="14.0" text="REGISTER PAGE" underline="true">
+                     <font>
+                        <Font size="34.0" />
+                     </font>
+                  </Label>
+                  <PasswordField fx:id="passwordField2" layoutX="42.0" layoutY="311.0" prefHeight="25.0" prefWidth="194.0" promptText="Re-enter your password : " />
+                  <TextField fx:id="phoneField" layoutX="42.0" layoutY="194.0" prefHeight="25.0" prefWidth="194.0" promptText="Phone Number :" />
+               </children>
+            </Group>
+         </children>
+      </Group>
+   </children>
+</AnchorPane>

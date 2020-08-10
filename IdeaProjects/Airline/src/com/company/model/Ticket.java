@@ -87,7 +87,12 @@ public class Ticket implements Showable, java.io.Serializable {
 
     @Override
     public String show() {
-        return null;
+        String info = "";
+        info += "ID : " + getId() + "- ";
+        info += "price : " + getPrice() + "- ";
+        info += "fine : " + getFine();
+
+        return info;
     }
 }
 

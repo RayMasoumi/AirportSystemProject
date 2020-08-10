@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="476.0" prefWidth="781.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.company.controller.ManagerManagementController">
+   <children>
+      <TableView fx:id="managerTbl" layoutX="4.0" layoutY="4.0" prefHeight="437.0" prefWidth="772.0">
+        <columns>
+          <TableColumn fx:id="nameCln" prefWidth="83.0" text="name" />
+          <TableColumn fx:id="lastNameCln" prefWidth="91.0" text="last name" />
+            <TableColumn fx:id="idCln" prefWidth="52.0" text="ID" />
+            <TableColumn fx:id="usernameCln" prefWidth="83.0" text="username" />
+            <TableColumn fx:id="passCln" prefWidth="90.0" text="password" />
+            <TableColumn fx:id="emailCln" prefWidth="78.0" text="email" />
+            <TableColumn fx:id="addressCln" prefWidth="79.0" text="address" />
+            <TableColumn fx:id="numberCln" minWidth="0.0" prefWidth="135.0" text="phone number" />
+            <TableColumn fx:id="salaryCln" prefWidth="149.0" text="salary               " />
+        </columns>
+      </TableView>
+      <Button fx:id="backBtn" layoutX="14.0" layoutY="447.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="64.0" text="Back" />
+      <Button fx:id="editBtn" layoutX="548.0" layoutY="447.0" mnemonicParsing="false" text="Edit manager" />
+      <Button fx:id="addBtn" layoutX="661.0" layoutY="447.0" mnemonicParsing="false" text="Add manager" />
+      <Button fx:id="removeBtn" layoutX="86.0" layoutY="447.0" mnemonicParsing="false" text="Remove manager" />
+   </children>
+</AnchorPane>

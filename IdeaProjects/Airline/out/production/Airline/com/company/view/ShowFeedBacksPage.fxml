@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="272.0" prefWidth="476.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.company.controller.ShowFeedBacksController">
+   <children>
+      <TableView fx:id="feedbackTbl" prefHeight="246.0" prefWidth="474.0">
+        <columns>
+          <TableColumn fx:id="feedbackCln" prefWidth="473.0" text="Feedbacks" />
+        </columns>
+      </TableView>
+      <Button fx:id="removeBtn" layoutX="201.0" layoutY="246.0" mnemonicParsing="false" text="Remove" />
+   </children>
+</AnchorPane>

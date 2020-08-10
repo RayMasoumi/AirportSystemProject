@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="476.0" prefWidth="781.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.company.controller.PassengerManagementController">
+   <children>
+      <TableView fx:id="passengerTbl" layoutX="4.0" layoutY="4.0" prefHeight="437.0" prefWidth="772.0">
+        <columns>
+          <TableColumn fx:id="nameCln" prefWidth="83.0" text="name" />
+          <TableColumn fx:id="lastNameCln" prefWidth="92.0" text="last name" />
+            <TableColumn fx:id="idCln" prefWidth="75.0" text="ID" />
+            <TableColumn fx:id="usernameCln" prefWidth="101.0" text="username" />
+            <TableColumn fx:id="passCln" prefWidth="98.0" text="password" />
+            <TableColumn fx:id="emailCln" prefWidth="90.0" text="email" />
+            <TableColumn fx:id="budgetCln" prefWidth="95.0" text="budget" />
+            <TableColumn fx:id="numberCln" prefWidth="130.0" text="phone number" />
+        </columns>
+      </TableView>
+      <Button fx:id="backBtn" layoutX="14.0" layoutY="447.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="64.0" text="Back" />
+      <Button fx:id="editBtn" layoutX="661.0" layoutY="447.0" mnemonicParsing="false" text="Edit passenger" />
+      <Button fx:id="removeBtn" layoutX="86.0" layoutY="447.0" mnemonicParsing="false" text="Remove passenger" />
+   </children>
+</AnchorPane>

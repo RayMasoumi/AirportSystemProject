@@ -10,6 +10,7 @@ public class Manager extends Person implements Showable, java.io.Serializable {
 
     private String address;
     private String phoneNumber;
+    private String salary;
     boolean isSuperAdmin;
     public static ArrayList<Manager> managers = new ArrayList<>();
     public static ArrayList<Manager> superAdmins = new ArrayList<>();
@@ -17,10 +18,11 @@ public class Manager extends Person implements Showable, java.io.Serializable {
 //constructor :
 
     public Manager(String name, String lastName, String ID, String username, String password, String email,
-                   String address, String phoneNumber) {
+                   String address, String phoneNumber, String salary) {
         super(name, lastName, ID, username, password, email);
         this.address = address;
         this.phoneNumber = phoneNumber;
+        this.salary = salary;
     }
 
     public Manager() {
@@ -36,6 +38,10 @@ public class Manager extends Person implements Showable, java.io.Serializable {
     public void setAddress(String address) {
         this.address = address;
     }
+
+    public void setSalary(String salary) { this.salary = salary; }
+
+    public String getSalary() { return salary; }
 
     public String getPhoneNumber() {
         return phoneNumber;
@@ -73,7 +79,18 @@ public class Manager extends Person implements Showable, java.io.Serializable {
 
     @Override
     public String show() {
-        return null;
+        String info = "";
+        info += "name : " + getName() + "- ";
+        info += "last name : " + getLastName() + "- ";
+        info += "identification : " + getID() + "- ";
+        info += "username : " + getUsername() + "- ";
+        info += "password : " + getPassword() + "- ";
+        info += "email : " + getEmail() + "- ";
+        info += "phone number : " + getPhoneNumber() + "- ";
+        info += "address : " + getAddress() + "- ";
+        info += "salary : " + getSalary();
+
+        return  info;
     }
 
 //check if there is super admin :
@@ -86,7 +103,7 @@ public class Manager extends Person implements Showable, java.io.Serializable {
 
 //create a super admin :
 
-    public static void addSuperAdmin() throws FileNotFoundException {
+    public static void addSuperAdmin() throws IOException {
         //create file :
         java.io.FileOutputStream superAdminFileOut = new java.io.FileOutputStream("superAdmin.txt");
         Manager superAdmin = new Manager();
@@ -95,6 +112,7 @@ public class Manager extends Person implements Showable, java.io.Serializable {
         superAdmin.setEmail("ray.masoumi80@gmail.com");
         superAdmin.isSuperAdmin = true;
         superAdmins.add(superAdmin);
+        writeSuperAdmin();
     }
 
 //write managers to file :
@@ -179,6 +197,36 @@ public class Manager extends Person implements Showable, java.io.Serializable {
         } catch (IOException | ClassNotFoundException e) {
             e.printStackTrace();
         }
+
+    }
+
+    ////////////////////////////////          FILE         //////////////////////////////////////
+
+//write ALL FILES :
+    public static void writeAll() throws IOException {
+        writeManager();
+        writeSuperAdmin();
+        Airplane.writeAirplane();
+        Employee.writeEmployee();
+        Flight.writeFlight();
+        Feedback.writeFeedback();
+        Passenger.writePassenger();
+        Ticket.writeTicket();
+        Activity.writeActivity();
+    }
+
+//read ALL FILES :
+    public static void readALl() throws IOException, ClassNotFoundException {
+        readManager();
+        readSuperAdmin();
+        Airplane.readAirplane();
+        Employee.readEmployee();
+        Flight.readFlight();
+        Feedback.readFeedback();
+        Passenger.readPassenger();
+        Ticket.readTicket();
+        Activity.readActivity();
+        //Feedback.feedbackWrite(Feedback.feedBacks);
 
     }
 

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="452.0" prefWidth="787.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.company.controller.ActivityReportController">
+   <children>
+      <TableView fx:id="activityTbl" prefHeight="452.0" prefWidth="812.0">
+        <columns>
+          <TableColumn fx:id="userCln" prefWidth="75.0" text="user" />
+          <TableColumn fx:id="roleCln" prefWidth="88.0" text="role" />
+            <TableColumn fx:id="actionCln" prefWidth="247.0" text="activity" />
+            <TableColumn fx:id="changedCln" prefWidth="153.0" text="submitted details" />
+            <TableColumn fx:id="timeCln" prefWidth="248.0" text="time  " />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

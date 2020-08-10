@@ -2,6 +2,7 @@ package com.company.model;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.Serializable;
 import java.util.ArrayList;
 
 public class Passenger extends Person implements Showable, java.io.Serializable {
@@ -17,6 +18,10 @@ public class Passenger extends Person implements Showable, java.io.Serializable 
         super(name, lastName, ID, username, password, email);
         this.phoneNumber = phoneNumber;
         this.budget = budget;
+    }
+
+    public Passenger() {
+
     }
 
 //setters and getters :
@@ -37,7 +42,15 @@ public class Passenger extends Person implements Showable, java.io.Serializable 
         this.budget = budget;
     }
 
-//write files :
+    public static ArrayList<Passenger> getPassengers() {
+        return passengers;
+    }
+
+    public static void setPassengers(ArrayList<Passenger> passengers) {
+        Passenger.passengers = passengers;
+    }
+
+    //write files : String pIndex // default value = pIndex
 
     public static void writePassenger() {
         try {
@@ -65,14 +78,30 @@ public class Passenger extends Person implements Showable, java.io.Serializable 
             java.io.ObjectInputStream passengerIn = new java.io.ObjectInputStream(passengerFileIn);
             int size = passengerIn.readInt();
             for (int i=0 ; i<size ; i++) {
-                Passenger passenger = (Passenger) passengerIn.readObject();
-                passengers.add(passenger);
+                //Passenger passenger = (Passenger) passengerIn.readObject();
+                Passenger passenger1 = (Passenger) passengerIn.readObject();
+                passengers.add(passenger1);
             }
             passengerIn.close();
             passengerFileIn.close();
         } catch (IOException | ClassNotFoundException e) {
             e.printStackTrace();
         }
+    }
+
+    @Override
+    public String show() {
+        String info = "";
+        info += "name : " + getName() + "- ";
+        info += "last name : " + getLastName() + "- ";
+        info += "identification : " + getID() + "- ";
+        info += "username : " + getUsername() + "- ";
+        info += "password : " + getPassword() + "- ";
+        info += "email : " + getEmail() + "- ";
+        info += "phone number : " + getPhoneNumber() + "- ";
+        info += "budget : " + getBudget();
+
+        return info;
     }
 
 //functions :
@@ -87,8 +116,4 @@ public class Passenger extends Person implements Showable, java.io.Serializable 
 
 //show method :
 
-    @Override
-    public String show() {
-        return null;
-    }
 }

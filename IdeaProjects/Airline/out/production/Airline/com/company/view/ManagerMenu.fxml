@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="414.0" prefWidth="312.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.company.controller.ManagerMenuController">
+   <children>
+      <Label layoutX="29.0" layoutY="14.0" text="Manager Menu" underline="true">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <Button fx:id="employeeBtn" layoutX="57.0" layoutY="85.0" mnemonicParsing="false" text="Employee Management">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="editBtn" layoutX="38.0" layoutY="298.0" mnemonicParsing="false" text="Edit Profile/Change Password">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="passengerBtn" layoutX="46.0" layoutY="131.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="222.0" text="Passenger Management">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="ticketBtn" layoutX="61.0" layoutY="176.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="190.0" text="Ticket Management">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="flightBtn" layoutX="74.0" layoutY="214.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="167.0" text="Flight Management">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="feedbackBtn" layoutX="83.0" layoutY="339.0" mnemonicParsing="false" text="Show Feedbacks">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="exitBtn" layoutX="243.0" layoutY="375.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="50.0" text="Exit" />
+      <Button fx:id="backBtn" layoutX="13.0" layoutY="375.0" mnemonicParsing="false" text="Back" />
+      <Button fx:id="airplaneBtn" layoutX="61.0" layoutY="255.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="190.0" text="Airplane Management">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

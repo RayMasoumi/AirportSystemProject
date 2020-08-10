@@ -11,11 +11,11 @@ public class Airplane implements Showable, java.io.Serializable {
 
     private String airplaneId;
     private String seats;
-    private List<Flight> flights;
+    private ArrayList<Flight> flights;
 
 //constructors :
 
-    public Airplane(String airplaneId, String seats, List<Flight> flights) {
+    public Airplane(String airplaneId, String seats, ArrayList<Flight> flights) {
         this.airplaneId = airplaneId;
         this.seats = seats;
         this.flights = flights;
@@ -51,20 +51,23 @@ public class Airplane implements Showable, java.io.Serializable {
         this.seats = seats;
     }
 
-    public List<Flight> getFlights() {
+    public ArrayList<Flight> getFlights() {
         return flights;
     }
 
-    public void setFlights(List<Flight> flights) {
+    public void setFlights(ArrayList<Flight> flights) {
         this.flights = flights;
     }
 
-
-//show method :
-
+    //show method :
     @Override
     public String show() {
-        return null;
+        String info = "";
+        info += "Id : " + getAirplaneId();
+        info += "seats : " + getSeats() + "- ";
+        info += "flights : " + getFlights();
+
+        return info;
     }
 
 //write to file :

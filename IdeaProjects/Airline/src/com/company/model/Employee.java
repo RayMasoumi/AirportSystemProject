@@ -85,7 +85,22 @@ public class Employee extends Person implements Showable, java.io.Serializable {
         }
     }
 
+//show method :
+    @Override
+    public String show() {
+        String info = "";
+        info += "name : " + getName() + "- ";
+        info += "last name : " + getLastName() + "- ";
+        info += "identification : " + getID() + "- ";
+        info += "username : " + getUsername() + "- ";
+        info += "password : " + getPassword() + "- ";
+        info += "email : " + getEmail() + "- ";
+        info += "phone number : " + getPhoneNumber() + "- ";
+        info += "address : " + getAddress() + "- ";
+        info += "salary : " + getSalary();
 
+        return info;
+    }
 
 //functions :
 
@@ -104,9 +119,6 @@ public class Employee extends Person implements Showable, java.io.Serializable {
 
 //show method :
 
-    @Override
-    public String show() {
-        return null;
-    }
+
 }
 

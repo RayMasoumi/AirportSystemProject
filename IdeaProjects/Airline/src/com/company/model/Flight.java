@@ -130,6 +130,8 @@ public class Flight implements Showable, java.io.Serializable {
         Flight.flights = flights;
     }
 
+
+
     //write file :
 
     public static void writeFlight() {
@@ -169,10 +171,21 @@ public class Flight implements Showable, java.io.Serializable {
     }
 
 //show method :
-
     @Override
     public String show() {
-        return null;
+        String info = "";
+        info += "Id : " + getFlightId() + "- ";
+        info += "airplane : " + getAirplane() + "- ";
+        info += "ticket : " + getTicket() + "- ";
+        info += "origin : " + getOrigin() + "- ";
+        info += "destination : " + getDestination() + "- ";
+        info += "date" + getDate() + "- ";
+        info += "time : " + getTime() + "- ";
+        info += "sold tickets : " + getSoldTickets() + "- ";
+        info += "passengers : " + getPassengers() + "- ";
+        info += "duration : " + getDuration();
+
+        return info;
     }
 }
 

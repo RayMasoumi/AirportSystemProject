@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="363.0" prefWidth="345.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.company.controller.PassengerMenuController">
+   <children>
+      <Label layoutX="24.0" layoutY="14.0" text="Passengers Menu" underline="true">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="83.0" text="what do you want to do ?">
+         <font>
+            <Font name="Lucida Sans Typewriter Regular" size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="editBtn" layoutX="68.0" layoutY="128.0" mnemonicParsing="false" text="Edit Profile/Change Password" />
+      <Button fx:id="budgetBtn" layoutX="110.0" layoutY="169.0" mnemonicParsing="false" text="Increase Budget" />
+      <Button fx:id="ticketBtn" layoutX="129.0" layoutY="244.0" mnemonicParsing="false" text="Buy Ticket" />
+      <Button fx:id="feedbackBtn" layoutX="113.0" layoutY="207.0" mnemonicParsing="false" text="Send Feedback" />
+      <Button fx:id="exitBtn" layoutX="151.0" layoutY="317.0" mnemonicParsing="false" text="Exit" />
+      <Button fx:id="backBtn" layoutX="148.0" layoutY="282.0" mnemonicParsing="false" text="Back" />
+   </children>
+</AnchorPane>

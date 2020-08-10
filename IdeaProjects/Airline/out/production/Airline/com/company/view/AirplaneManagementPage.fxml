@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="270.0" prefWidth="491.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.company.controller.AirplaneManagementController">
+   <children>
+      <TableView fx:id="airplanesTbl" prefHeight="242.0" prefWidth="491.0">
+        <columns>
+          <TableColumn fx:id="idCln" prefWidth="315.0" text="ID" />
+          <TableColumn fx:id="seatsCln" prefWidth="84.0" text="seats" />
+            <TableColumn fx:id="flightsCln" prefWidth="91.0" text="flights list" />
+        </columns>
+      </TableView>
+      <Button fx:id="removeBtn" layoutX="7.0" layoutY="242.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="129.0" text="Remove airplane" />
+      <Button fx:id="editBtn" layoutX="191.0" layoutY="242.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="110.0" text="Edit airplane" />
+      <Button fx:id="addBtn" layoutX="356.0" layoutY="242.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="129.0" text="Add airPlane" />
+   </children>
+</AnchorPane>
